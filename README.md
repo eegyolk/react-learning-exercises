@@ -8,7 +8,7 @@
 
 ✅ [**01 - Fundamentals**](https://github.com/eegyolk/react-learning-exercises/tree/main/01-fundamentals): JSX, Components, Props, and State
 
-✅ [**02 - Hooks**](https://github.com/eegyolk/react-learning-exercises/tree/main/01-hooks): useContext, useReducer, useState, useRef, useEffect, and useMemo
+✅ [**02 - Hooks**](https://github.com/eegyolk/react-learning-exercises/tree/main/02-hooks): useContext, useReducer, useState, useRef, useEffect, and useMemo
 
 ## Setup Instructions
 
