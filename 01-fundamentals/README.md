@@ -13,6 +13,63 @@ React is a **JavaScript library** for building fast and interactive user interfa
 - **Strong Ecosystem** – Supports tools like React Router, Redux, and Next.js.
 - **Cross-Platform** – Use with React Native for mobile apps.
 
+## JSX
+
+**JSX** is a **syntax extension for JavaScript** that is used in React to describe the UI structure. It looks similar to HTML but allows embedding JavaScript expressions inside `curly braces {}`.
+
+**JSX uses HTML-like syntax** but allows JavaScript inside `{}` (e.g., `{props.name}`). JSX must have a single parent element, so wrap multiple elements inside `<div>` or `<>`.
+
+```
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+```
+
+JSX attributes **use camelCase** instead of HTML attribute names. Use `className `instead of `class`. Use `htmlFo`r instead of `for` for labels.
+
+```
+const Button = () => {
+  return <button className="btn-primary" onClick={() => alert("Clicked!")}>Click Me</button>;
+};
+```
+
+You can use **ternary operators (**`? :`**)** or **logical** `&&` **operators** to conditionally render elements.
+
+```
+const isLoggedIn = true;
+
+return (
+  <div>
+    {isLoggedIn ? <h1>Welcome Back!</h1> : <h1>Please Log In</h1>}
+  </div>
+);
+```
+
+```
+const hasNotifications = true;
+
+return (
+  <div>
+    <h1>Dashboard</h1>
+    {hasNotifications && <p>You have new messages.</p>}
+  </div>
+);
+```
+
+JSX can **dynamically render lists** using `.map()`. Always add a key when rendering lists to `improve React performance`.
+
+```
+const todos = ["Learn React", "Build Projects", "Contribute to Open Source"];
+
+return (
+  <ul>
+    {todos.map((todo, index) => (
+      <li key={index}>{todo}</li>
+    ))}
+  </ul>
+);
+```
+
 ## Components (Functional & Class)
 
 Class components were the standard before React Hooks. They require the **_render()_** method and use **_this.state_** for state management.
