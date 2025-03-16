@@ -11,10 +11,12 @@ function ThemeToggle() {
   }
 
   return (
-    // Button to toggle the theme, dynamically changing its background and text color
-    <button onClick={onClickHandler} style={{ background: isDark ? "#fff" : "#333", color: isDark ? "#333" : "#fff" }}>
-      {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
-    </button>
+    <div className="card">
+      {/* Button to toggle the theme, dynamically changing its background and text color, button text is dynamic */}
+      <button onClick={onClickHandler} style={{ background: isDark ? "#fff" : "#333", color: isDark ? "#333" : "#fff" }}>
+        {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"} 
+      </button>
+    </div>
   )
 }
 
