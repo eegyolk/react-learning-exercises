@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+input.add-todo {
+  padding: 10px;
+  margin-inline-end: 10px;
+}
+
+button.as-link {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
