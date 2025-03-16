@@ -10,6 +10,8 @@
 
 ✅ [**02 - Hooks**](https://github.com/eegyolk/react-learning-exercises/tree/main/02-hooks): useContext, useReducer, useState, useRef, useEffect, and useMemo
 
+✅ [**03 - Component Lifecycle**](https://github.com/eegyolk/react-learning-exercises/tree/main/03-component-lifecycle): Class vs Functional
+
 ## Setup Instructions
 
 ### Prerequisites
